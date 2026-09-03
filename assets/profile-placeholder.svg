@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12000a"/>
+      <stop offset="50%" stop-color="#63000d"/>
+      <stop offset="100%" stop-color="#16000f"/>
+    </linearGradient>
+
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b00024"/>
+      <stop offset="50%" stop-color="#8b1740"/>
+      <stop offset="100%" stop-color="#63000d"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" rx="400" fill="url(#bg)"/>
+
+  <circle
+    cx="400"
+    cy="400"
+    r="310"
+    fill="none"
+    stroke="url(#ring)"
+    stroke-width="8"
+    opacity="0.9"
+    filter="url(#glow)"
+  />
+
+  <circle
+    cx="400"
+    cy="400"
+    r="270"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="2"
+    opacity="0.12"
+  />
+
+  <!-- Head -->
+  <circle
+    cx="400"
+    cy="315"
+    r="105"
+    fill="#f1d1c5"
+  />
+
+  <!-- Hair -->
+  <path
+    d="M295 315
+       C292 235 340 185 405 185
+       C485 185 520 245 505 325
+       C478 292 455 275 420 270
+       C380 300 340 305 295 315Z"
+    fill="#171017"
+  />
+
+  <!-- Body -->
+  <path
+    d="M235 650
+       C250 515 310 455 400 455
+       C490 455 550 515 565 650Z"
+    fill="#09090d"
+  />
+
+  <!-- Shirt accent -->
+  <path
+    d="M325 650
+       L365 495
+       L400 545
+       L435 495
+       L475 650Z"
+    fill="#63000d"
+    opacity="0.9"
+  />
+
+  <!-- Small decorative code symbols -->
+  <g fill="#ffffff" opacity="0.25" font-family="monospace" font-size="34">
+    <text x="105" y="180">&lt;/&gt;</text>
+    <text x="600" y="210">{ }</text>
+    <text x="105" y="620">01</text>
+    <text x="625" y="610">_MAHEEM</text>
+  </g>
+
+  <text
+    x="400"
+    y="715"
+    text-anchor="middle"
+    fill="#ffffff"
+    opacity="0.75"
+    font-family="Arial, sans-serif"
+    font-size="24"
+    letter-spacing="6"
+  >
+    MAHEEM
+  </text>
+</svg>
