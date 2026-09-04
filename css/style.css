@@ -2201,3 +2201,230 @@ h2 em {
     white-space: normal;
   }
 }
+/* =========================================================
+   MAHEEM PORTFOLIO
+   FINAL HERO BACKGROUND / NAME CLIPPING FIX
+   ========================================================= */
+
+/*
+ * IMPORTANT:
+ * The body controls page-level horizontal overflow.
+ * The hero itself must NOT clip its decorative artwork.
+ */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+
+  /*
+   * Do not clip the large background/orb artwork.
+   */
+  overflow: visible !important;
+
+  width: min(var(--max), 90vw);
+  max-width: var(--max);
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+
+  min-width: 0;
+  width: 100%;
+}
+
+
+/* =========================================================
+   MARUF ALLAM MAHIM
+   ========================================================= */
+
+.hero h1 {
+  position: relative;
+  z-index: 3;
+
+  /*
+   * Prevent the large name from being cut.
+   */
+  width: max-content;
+  max-width: none;
+
+  overflow: visible;
+
+  /*
+   * IMPORTANT:
+   * Do not force individual letters/words to break.
+   */
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.hero h1 em {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   HERO DECORATIVE ORBS / BACKGROUND
+   ========================================================= */
+
+.hero-orb {
+  position: absolute;
+  z-index: 0;
+
+  pointer-events: none;
+
+  /*
+   * The artwork is allowed to extend outside the hero.
+   */
+  overflow: visible;
+}
+
+.orb-a,
+.orb-b {
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   QUOTE
+   ========================================================= */
+
+.hero-quote {
+  z-index: 3;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    width: 90vw;
+    max-width: 90vw;
+    overflow: visible !important;
+  }
+
+  .hero h1 {
+    width: auto;
+    max-width: 100%;
+
+    overflow: visible;
+
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .hero h1 em {
+    display: inline-block;
+    white-space: normal;
+  }
+
+  .hero-orb {
+    z-index: 0;
+    right: -20%;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 620px) {
+
+  .hero {
+    width: 90vw;
+    max-width: 90vw;
+
+    overflow: visible !important;
+
+    padding-top: 125px;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: 100%;
+
+    overflow: visible;
+
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .hero h1 em {
+    display: inline;
+    white-space: normal;
+  }
+
+  /*
+   * Keep the decorative background visible
+   * without allowing it to create horizontal scrolling.
+   */
+  .hero-orb {
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .orb-a {
+    width: 420px;
+    height: 420px;
+    right: -35%;
+  }
+
+  .orb-b {
+    width: 290px;
+    height: 290px;
+    right: -15%;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .hero h1 {
+    font-size: clamp(43px, 13vw, 60px);
+    letter-spacing: -.065em;
+  }
+
+  .orb-a {
+    right: -55%;
+  }
+
+  .orb-b {
+    right: -25%;
+  }
+
+}
