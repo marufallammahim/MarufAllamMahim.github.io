@@ -1821,13 +1821,10 @@ h2 em {
     max-width: 90vw;
   }
 
-  /* FIX: Mobile heading can never push page width */
   .hero h1 {
-    font-size: clamp(48px, 14vw, 82px);
-    width: 100%;
-    max-width: 100%;
-    overflow-wrap: anywhere;
-    word-break: break-word;
+    font-size: clamp(48px, 13.2vw, 82px);
+    padding-right: 3px;
+    overflow: visible;
   }
 
   .hero-role {
@@ -1995,4 +1992,4 @@ h2 em {
     opacity: 1;
     transform: none;
   }
-  }
+}
