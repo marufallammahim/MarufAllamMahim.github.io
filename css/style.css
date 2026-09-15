@@ -18,24 +18,749 @@
   --ease: cubic-bezier(.22,.61,.36,1);
 }
 
+
+/* =========================================================
+   MAHEEM PORTFOLIO — FINAL LIGHT MODE
+   Warm Ivory / Cream / Editorial / High Contrast
+   ========================================================= */
+
 html[data-theme="light"] {
-  --bg: #f3f0ed;
-  --bg-soft: #ebe6e2;
-  --surface: rgba(0,0,0,.045);
-  --surface-strong: #e8e1dd;
-  --text: #171213;
-  --muted: #635b59;
-  --faint: #8e8581;
-  --line: rgba(0,0,0,.11);
-  --line-strong: rgba(0,0,0,.18);
-  --shadow: 0 30px 80px rgba(54,37,31,.12);
+
+  /* ---------- Main Background ---------- */
+
+  --bg: #EAE1D5;
+  --bg-soft: #E1D6C8;
+
+  /* ---------- Surfaces / Cards ---------- */
+
+  --surface: #F4EEE5;
+  --surface-strong: #DED2C4;
+
+  /* ---------- Typography ---------- */
+
+  --text: #211A18;
+  --muted: #5D544E;
+  --faint: #766B64;
+
+  /* ---------- Borders ---------- */
+
+  --line: rgba(83, 65, 54, .16);
+  --line-strong: rgba(83, 65, 54, .26);
+
+  /* ---------- Brand ---------- */
+
+  --burgundy: #63000D;
+  --burgundy-2: #7A1523;
+
+  --purple: #6547A8;
+  --purple-soft: #7355B7;
+
+  --primary: #63000D;
+  --primary-dark: #4D0913;
+  --accent: #6547A8;
+
+  --success: #267357;
+
+  /* ---------- Shadows ---------- */
+
+  --shadow:
+    0 28px 70px rgba(67, 48, 37, .13);
+
+  --shadow-soft:
+    0 12px 35px rgba(67, 48, 37, .075);
 }
+
+
+/* =========================================================
+   LIGHT MODE — BODY
+   ========================================================= */
+
+html[data-theme="light"] body {
+
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(122, 21, 35, .055),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 15% 72%,
+      rgba(101, 71, 168, .035),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #EEE6DC 0%,
+      #EAE1D5 48%,
+      #E7DDD1 100%
+    );
+
+  color: var(--text);
+}
+
+
+/* =========================================================
+   LIGHT MODE — MAIN TEXT
+   ========================================================= */
+
+html[data-theme="light"] p,
+html[data-theme="light"] li,
+html[data-theme="light"] span {
+  color: inherit;
+}
+
+
+/* =========================================================
+   LIGHT MODE — SECONDARY TEXT
+   ========================================================= */
+
+html[data-theme="light"] .muted,
+html[data-theme="light"] .subtitle,
+html[data-theme="light"] .description,
+html[data-theme="light"] .meta {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   LIGHT MODE — CARDS
+   ========================================================= */
+
+html[data-theme="light"] .card,
+html[data-theme="light"] .project-card,
+html[data-theme="light"] .quote-card,
+html[data-theme="light"] .about-card,
+html[data-theme="light"] .explore-card {
+
+  background: rgba(244, 238, 229, .94);
+
+  border-color: var(--line);
+
+  box-shadow: var(--shadow-soft);
+}
+
+
+/* =========================================================
+   LIGHT MODE — CARD HOVER
+   ========================================================= */
+
+html[data-theme="light"] .card:hover,
+html[data-theme="light"] .project-card:hover,
+html[data-theme="light"] .quote-card:hover,
+html[data-theme="light"] .about-card:hover,
+html[data-theme="light"] .explore-card:hover {
+
+  background: #F8F2E9;
+
+  border-color: var(--line-strong);
+
+  box-shadow:
+    0 25px 65px rgba(67, 48, 37, .14);
+}
+
+
+/* =========================================================
+   LIGHT MODE — HEADINGS
+   ========================================================= */
+
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4 {
+
+  color: #211A18;
+}
+
+
+/* =========================================================
+   LIGHT MODE — LINKS
+   ========================================================= */
+
+html[data-theme="light"] a {
+  color: #63000D;
+}
+
+html[data-theme="light"] a:hover {
+  color: #4D0913;
+}
+
+
+/* =========================================================
+   LIGHT MODE — BRAND / BURGUNDY
+   ========================================================= */
+
+html[data-theme="light"] .burgundy,
+html[data-theme="light"] .primary,
+html[data-theme="light"] .accent-burgundy {
+
+  color: #63000D;
+}
+
+
+/* =========================================================
+   LIGHT MODE — PURPLE
+   ========================================================= */
+
+html[data-theme="light"] .purple,
+html[data-theme="light"] .lavender,
+html[data-theme="light"] .accent-purple {
+
+  color: #6547A8;
+}
+
+
+/* =========================================================
+   LIGHT MODE — GREEN STATUS
+   ========================================================= */
+
+html[data-theme="light"] .green,
+html[data-theme="light"] .status,
+html[data-theme="light"] .available {
+
+  color: #267357;
+}
+
+
+/* =========================================================
+   LIGHT MODE — TAGS / PILLS
+   ========================================================= */
+
+html[data-theme="light"] .tag,
+html[data-theme="light"] .pill {
+
+  color: #4B423D;
+
+  background: #E8DED2;
+
+  border-color: #C9BCAE;
+}
+
+
+/* =========================================================
+   LIGHT MODE — BUTTONS
+   ========================================================= */
+
+html[data-theme="light"] .btn-primary,
+html[data-theme="light"] .primary-btn {
+
+  background: #211A18;
+
+  color: #F7F0E7;
+
+  border-color: #211A18;
+}
+
+
+html[data-theme="light"] .btn-primary:hover,
+html[data-theme="light"] .primary-btn:hover {
+
+  background: #63000D;
+
+  color: #FFF8F1;
+
+  border-color: #63000D;
+}
+
+
+/* =========================================================
+   LIGHT MODE — SECONDARY BUTTON
+   ========================================================= */
+
+html[data-theme="light"] .btn-secondary,
+html[data-theme="light"] .secondary-btn {
+
+  background: rgba(244, 238, 229, .72);
+
+  color: #211A18;
+
+  border-color: #C9BCAE;
+}
+
+
+html[data-theme="light"] .btn-secondary:hover,
+html[data-theme="light"] .secondary-btn:hover {
+
+  background: #E1D6C8;
+
+  border-color: #AE9F91;
+}
+
+
+/* =========================================================
+   LIGHT MODE — NAVIGATION
+   ========================================================= */
+
+html[data-theme="light"] header,
+html[data-theme="light"] .navbar,
+html[data-theme="light"] .nav {
+
+  background: rgba(234, 225, 213, .88);
+
+  border-color: rgba(174, 159, 145, .55);
+}
+
+
+/* =========================================================
+   LIGHT MODE — NAV TEXT
+   ========================================================= */
+
+html[data-theme="light"] nav a {
+
+  color: #3F3732;
+}
+
+html[data-theme="light"] nav a:hover {
+
+  color: #63000D;
+}
+
+
+/* =========================================================
+   LIGHT MODE — PROJECT METADATA
+   ========================================================= */
+
+html[data-theme="light"] .project-meta,
+html[data-theme="light"] .project-number,
+html[data-theme="light"] .project-category {
+
+  color: #766B64;
+}
+
+
+/* =========================================================
+   LIGHT MODE — QUOTE MARK
+   ========================================================= */
+
+html[data-theme="light"] .quote-mark {
+
+  color: #63000D;
+}
+
+
+/* =========================================================
+   LIGHT MODE — DIVIDERS
+   ========================================================= */
+
+html[data-theme="light"] hr,
+html[data-theme="light"] .divider {
+
+  border-color: #C9BCAE;
+}
+
+
+/* =========================================================
+   LIGHT MODE — INPUTS
+   ========================================================= */
+
+html[data-theme="light"] input,
+html[data-theme="light"] textarea,
+html[data-theme="light"] select {
+
+  background: #F5EFE7;
+
+  color: #211A18;
+
+  border-color: #C9BCAE;
+}
+
+
+html[data-theme="light"] input::placeholder,
+html[data-theme="light"] textarea::placeholder {
+
+  color: #766B64;
+}
+
+
+/* =========================================================
+   LIGHT MODE — SELECTION
+   ========================================================= */
+
+html[data-theme="light"] ::selection {
+
+  background: #63000D;
+
+  color: #FFF8F1;
+}
+
+
+/* =========================================================
+   LIGHT MODE — FOCUS
+   ========================================================= */
+
+html[data-theme="light"] :focus-visible {
+
+  outline: 2px solid #6547A8;
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   LIGHT MODE — FEATURE AREAS
+   ========================================================= */
+
+html[data-theme="light"] .featured,
+html[data-theme="light"] .exploring,
+html[data-theme="light"] .feature-card {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(210, 188, 187, .36),
+      rgba(244, 238, 229, .94)
+    );
+
+  border-color: #CBB8B5;
+}
+
+
+/* =========================================================
+   LIGHT MODE — CURRENTLY EXPLORING
+   ========================================================= */
+
+html[data-theme="light"] .exploring h2,
+html[data-theme="light"] .exploring h3 {
+
+  color: #211A18;
+}
+
+
+html[data-theme="light"] .exploring .accent {
+
+  color: #6547A8;
+}
+
+
+/* =========================================================
+   LIGHT MODE — REDUCE WASHED OUT EFFECT
+   ========================================================= */
+
+html[data-theme="light"] .faint,
+html[data-theme="light"] .subtle,
+html[data-theme="light"] .caption {
+
+  opacity: 1;
+
+  color: #766B64;
+}
+
+
+/* =========================================================
+   LIGHT MODE — NOW CARD
+   ========================================================= */
+
+html[data-theme="light"] .now-card {
+
+  background:
+    linear-gradient(
+      100deg,
+      rgba(99, 0, 13, .075),
+      rgba(101, 71, 168, .035)
+    );
+
+  border-color: var(--line);
+}
+
+
+/* =========================================================
+   LIGHT MODE — TERMINAL
+   ========================================================= */
+
+html[data-theme="light"] .terminal-mini {
+
+  background: rgba(244, 238, 229, .82);
+
+  border-color: var(--line);
+}
+
+
+/* =========================================================
+   LIGHT MODE — SKILL GROUPS
+   ========================================================= */
+
+html[data-theme="light"] .skill-groups {
+
+  border-color: var(--line);
+}
+
+
+/* =========================================================
+   LIGHT MODE — CHIP TEXT
+   ========================================================= */
+
+html[data-theme="light"] .chips span,
+html[data-theme="light"] .project-tags span {
+
+  color: #5D544E;
+
+  background: rgba(232, 222, 210, .42);
+
+  border-color: var(--line);
+}
+
+
+/* =========================================================
+   LIGHT MODE — ABOUT PORTRAIT
+   ========================================================= */
+
+html[data-theme="light"] .portrait-wrap {
+
+  background: #DED2C4;
+}
+
+
+/* =========================================================
+   LIGHT MODE — COMMAND PANEL
+   ========================================================= */
+
+html[data-theme="light"] .command-overlay {
+
+  background: rgba(43, 31, 25, .32);
+}
+
+
+html[data-theme="light"] .command-panel {
+
+  background: #F0E8DE;
+
+  border-color: var(--line-strong);
+}
+
+
+/* =========================================================
+   LIGHT MODE — TOAST
+   ========================================================= */
+
+html[data-theme="light"] .toast {
+
+  background: #F0E8DE;
+
+  border-color: var(--line-strong);
+}
+
+
+/* =========================================================
+   LIGHT MODE — MOBILE MENU
+   ========================================================= */
+
+html[data-theme="light"] .mobile-menu {
+
+  background:
+    rgba(234, 225, 213, .96);
+}
+
+
+/* =========================================================
+   LIGHT MODE — HERO ACCENTS
+   ========================================================= */
+
+html[data-theme="light"] .hero h1 em {
+
+  -webkit-text-stroke:
+    1px rgba(33, 26, 24, .72);
+}
+
+
+html[data-theme="light"] .hero-role {
+
+  color: #6547A8;
+}
+
+
+html[data-theme="light"] .hero-role span {
+
+  color: #63000D;
+}
+
+
+/* =========================================================
+   LIGHT MODE — BIG NUMBER
+   ========================================================= */
+
+html[data-theme="light"] .big-number {
+
+  color: #7A1523;
+}
+
+
+/* =========================================================
+   LIGHT MODE — SECTION NUMBERS
+   ========================================================= */
+
+html[data-theme="light"] .section-number {
+
+  color: #7A1523;
+}
+
+
+/* =========================================================
+   LIGHT MODE — MARQUEE
+   ========================================================= */
+
+html[data-theme="light"] .marquee {
+
+  background: rgba(244, 238, 229, .58);
+
+  border-color: var(--line);
+}
+
+
+html[data-theme="light"] .marquee-track b {
+
+  color: #63000D;
+}
+
+
+/* =========================================================
+   LIGHT MODE — TEXT BUTTON
+   ========================================================= */
+
+html[data-theme="light"] .text-button {
+
+  color: #3F3732;
+
+  border-color: var(--line-strong);
+}
+
+
+/* =========================================================
+   LIGHT MODE — READING CARD
+   ========================================================= */
+
+html[data-theme="light"] .reading-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(244, 238, 229, .98),
+      rgba(231, 220, 207, .94)
+    );
+}
+
+
+/* =========================================================
+   LIGHT MODE — QUOTE CARD
+   ========================================================= */
+
+html[data-theme="light"] .quote-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(244, 238, 229, .98),
+      rgba(231, 220, 207, .90)
+    );
+}
+
+
+/* =========================================================
+   LIGHT MODE — QUOTE DISPLAY
+   ========================================================= */
+
+html[data-theme="light"] .quote-display > span {
+
+  color: #6547A8;
+}
+
+
+/* =========================================================
+   LIGHT MODE — STATEMENT CARD
+   ========================================================= */
+
+html[data-theme="light"] .statement-card {
+
+  background: rgba(244, 238, 229, .90);
+}
+
+
+/* =========================================================
+   LIGHT MODE — EMAIL
+   ========================================================= */
+
+html[data-theme="light"] .email-link {
+
+  color: #211A18;
+
+  border-color: var(--line-strong);
+}
+
+
+html[data-theme="light"] .email-link span {
+
+  color: #6547A8;
+}
+
+
+/* =========================================================
+   LIGHT MODE — SOCIAL LINKS
+   ========================================================= */
+
+html[data-theme="light"] .social-grid {
+
+  border-color: var(--line);
+}
+
+
+html[data-theme="light"] .social-grid a {
+
+  border-color: var(--line);
+
+  color: #3F3732;
+}
+
+
+html[data-theme="light"] .social-grid a:hover b {
+
+  color: #6547A8;
+}
+
+
+/* =========================================================
+   LIGHT MODE — FOOTER
+   ========================================================= */
+
+html[data-theme="light"] .footer {
+
+  border-color: var(--line);
+}
+
+
+/* =========================================================
+   LIGHT MODE — FOOTER TEXT
+   ========================================================= */
+
+html[data-theme="light"] .footer p,
+html[data-theme="light"] .footer-right {
+
+  color: #766B64;
+}
+
+
+/* =========================================================
+   LIGHT MODE — TOP BUTTON
+   ========================================================= */
+
+html[data-theme="light"] #topButton {
+
+  color: #5D544E;
+
+  border-color: var(--line-strong);
+}
+
+
+/* =========================================================
+   UNIVERSAL BOX SIZING
+   ========================================================= */
 
 * {
   box-sizing: border-box;
 }
 
-/* FIX: Prevent page-level horizontal overflow */
+
+/* =========================================================
+   FIX: Prevent page-level horizontal overflow
+   ========================================================= */
+
 html,
 body {
   width: 100%;
@@ -43,9 +768,11 @@ body {
   overflow-x: hidden;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
+
 
 body {
   margin: 0;
@@ -56,29 +783,39 @@ body {
   transition: background .35s ease, color .35s ease;
 }
 
+
 body.menu-open,
 body.command-open {
   overflow: hidden;
 }
+
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
+
 button,
 input {
   font: inherit;
 }
 
+
 button {
   color: inherit;
 }
+
 
 ::selection {
   background: var(--burgundy);
   color: white;
 }
+
+
+/* =========================================================
+   NOISE
+   ========================================================= */
 
 .noise {
   position: fixed;
@@ -89,6 +826,11 @@ button {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
 }
 
+
+/* =========================================================
+   SPACE CANVAS
+   ========================================================= */
+
 #spaceCanvas {
   position: fixed;
   inset: 0;
@@ -96,6 +838,11 @@ button {
   opacity: .6;
   pointer-events: none;
 }
+
+
+/* =========================================================
+   PRELOADER
+   ========================================================= */
 
 .preloader {
   position: fixed;
@@ -108,10 +855,12 @@ button {
   transition: opacity .7s ease, visibility .7s ease;
 }
 
+
 .preloader.done {
   opacity: 0;
   visibility: hidden;
 }
+
 
 .loader-mark {
   font-size: 52px;
@@ -119,11 +868,13 @@ button {
   letter-spacing: -.08em;
 }
 
+
 .loader-mark span,
 .brand-name span,
 .footer-logo span {
   color: var(--purple);
 }
+
 
 .loader-line {
   width: 160px;
@@ -132,6 +883,7 @@ button {
   overflow: hidden;
 }
 
+
 .loader-line i {
   display: block;
   height: 100%;
@@ -139,6 +891,7 @@ button {
   background: var(--burgundy-2);
   animation: load 1.2s var(--ease) infinite;
 }
+
 
 @keyframes load {
   from {
@@ -149,6 +902,11 @@ button {
     transform: translateX(350%);
   }
 }
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 .site-header {
   position: fixed;
@@ -165,11 +923,17 @@ button {
   transition: background .3s, border .3s, backdrop-filter .3s;
 }
 
+
 .site-header.scrolled {
   background: color-mix(in srgb, var(--bg) 78%, transparent);
   backdrop-filter: blur(18px);
   border-color: var(--line);
 }
+
+
+/* =========================================================
+   BRAND
+   ========================================================= */
 
 .brand {
   display: flex;
@@ -177,11 +941,10 @@ button {
   gap: 11px;
   font-weight: 800;
   letter-spacing: .08em;
-
-  /* FIX */
   min-width: 0;
   flex-shrink: 1;
 }
+
 
 .brand-symbol {
   width: 35px;
@@ -191,17 +954,19 @@ button {
   border: 1px solid var(--line-strong);
   border-radius: 9px;
   font-size: 14px;
-
-  /* FIX */
   flex-shrink: 0;
 }
 
+
 .brand-name {
   font-size: 13px;
-
-  /* FIX */
   white-space: nowrap;
 }
+
+
+/* =========================================================
+   DESKTOP NAV
+   ========================================================= */
 
 .desktop-nav {
   display: flex;
@@ -209,6 +974,7 @@ button {
   margin-left: auto;
   margin-right: 35px;
 }
+
 
 .desktop-nav a {
   font-size: 11px;
@@ -218,17 +984,26 @@ button {
   transition: color .2s;
 }
 
+
 .desktop-nav a:hover {
   color: var(--text);
 }
 
+
+/* =========================================================
+   HEADER ACTIONS
+   ========================================================= */
+
 .header-actions {
   display: flex;
   gap: 8px;
-
-  /* FIX */
   flex-shrink: 0;
 }
+
+
+/* =========================================================
+   ICON BUTTONS
+   ========================================================= */
 
 .icon-button,
 .menu-toggle {
@@ -244,21 +1019,25 @@ button {
   flex-shrink: 0;
 }
 
+
 .icon-button:hover,
 .menu-toggle:hover {
   border-color: var(--line-strong);
   transform: translateY(-2px);
 }
 
+
 .icon-button {
   font-size: 15px;
 }
+
 
 .menu-toggle {
   display: none;
   border-radius: 10px;
   position: relative;
 }
+
 
 .menu-toggle span {
   width: 15px;
@@ -268,21 +1047,30 @@ button {
   transition: .25s;
 }
 
+
 .menu-toggle span:first-child {
   transform: translateY(-3px);
 }
+
 
 .menu-toggle span:last-child {
   transform: translateY(3px);
 }
 
+
 .menu-toggle.active span:first-child {
   transform: rotate(45deg);
 }
 
+
 .menu-toggle.active span:last-child {
   transform: rotate(-45deg);
 }
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
 
 .mobile-menu {
   position: fixed;
@@ -297,16 +1085,16 @@ button {
   backdrop-filter: blur(20px);
   transform: translateY(-100%);
   transition: transform .6s var(--ease);
-
-  /* FIX */
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
+
 .mobile-menu.open {
   transform: translateY(0);
 }
+
 
 .mobile-menu a {
   font-size: clamp(30px, 8vw, 60px);
@@ -314,11 +1102,14 @@ button {
   letter-spacing: -.05em;
   border-bottom: 1px solid var(--line);
   padding: 14px 0;
-
-  /* FIX */
   max-width: 100%;
   overflow-wrap: anywhere;
 }
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
 
 .section {
   width: min(var(--max), 90vw);
@@ -328,26 +1119,29 @@ button {
   position: relative;
 }
 
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
 .hero {
   min-height: 100svh;
   padding-top: 170px;
   display: flex;
   align-items: center;
-
-  /* FIX */
   max-width: 100%;
   overflow: hidden;
 }
+
 
 .hero-content {
   max-width: 850px;
   position: relative;
   z-index: 2;
-
-  /* FIX */
   min-width: 0;
   width: 100%;
 }
+
 
 .eyebrow {
   margin: 0 0 18px;
@@ -356,6 +1150,7 @@ button {
   font: 500 10px/1 DM Mono, monospace;
   color: var(--muted);
 }
+
 
 .status-dot {
   display: inline-block;
@@ -368,18 +1163,18 @@ button {
   vertical-align: 1px;
 }
 
+
 .hero h1 {
   font-size: clamp(60px, 10.8vw, 150px);
   line-height: .84;
   letter-spacing: -.075em;
   margin: 0;
   font-weight: 800;
-
-  /* FIX: Prevent long name from creating horizontal overflow */
   max-width: 100%;
   overflow-wrap: anywhere;
   word-break: normal;
 }
+
 
 .hero h1 em,
 h2 em {
@@ -387,34 +1182,35 @@ h2 em {
   font-weight: 600;
 }
 
+
 .hero h1 em {
   color: transparent;
   -webkit-text-stroke: 1px color-mix(in srgb, var(--text) 70%, transparent);
   font-style: italic;
 }
 
+
 .hero-meta {
   margin: 35px 0 30px;
   max-width: 670px;
-
-  /* FIX */
   min-width: 0;
 }
+
 
 .hero-role {
   font: 500 11px/1.8 DM Mono, monospace;
   color: var(--purple-soft);
   text-transform: uppercase;
   letter-spacing: .04em;
-
-  /* FIX */
   max-width: 100%;
   overflow-wrap: anywhere;
 }
 
+
 .hero-role span {
   color: var(--burgundy-2);
 }
+
 
 .hero-intro {
   margin: 17px 0 0;
@@ -422,20 +1218,17 @@ h2 em {
   font-size: 16px;
   line-height: 1.8;
   max-width: 590px;
-
-  /* FIX */
-  max-width: 100%;
   overflow-wrap: anywhere;
 }
+
 
 .hero-actions {
   display: flex;
   gap: 11px;
   flex-wrap: wrap;
-
-  /* FIX */
   max-width: 100%;
 }
+
 
 .button {
   display: inline-flex;
@@ -448,14 +1241,14 @@ h2 em {
   font: 500 10px DM Mono, monospace;
   letter-spacing: .08em;
   transition: .3s var(--ease);
-
-  /* FIX */
   max-width: 100%;
 }
+
 
 .button span {
   font-size: 15px;
 }
+
 
 .button-primary {
   background: var(--text);
@@ -463,14 +1256,21 @@ h2 em {
   border-color: var(--text);
 }
 
+
 .button-primary:hover {
   background: var(--purple-soft);
   border-color: var(--purple-soft);
 }
 
+
 .button-ghost:hover {
   background: var(--surface);
 }
+
+
+/* =========================================================
+   HERO QUOTE
+   ========================================================= */
 
 .hero-quote {
   position: absolute;
@@ -478,21 +1278,22 @@ h2 em {
   bottom: 19%;
   width: 285px;
   z-index: 2;
-
-  /* FIX */
   max-width: 100%;
 }
+
 
 .quote-mark {
   font: 90px/.4 "Playfair Display", serif;
   color: var(--burgundy-2);
 }
 
+
 .hero-quote p {
   margin: 0 0 10px;
   color: var(--muted);
   font: italic 17px/1.55 "Playfair Display", serif;
 }
+
 
 .hero-quote strong {
   font: 500 9px DM Mono, monospace;
@@ -501,6 +1302,11 @@ h2 em {
   color: var(--text);
 }
 
+
+/* =========================================================
+   HERO ORBS
+   ========================================================= */
+
 .hero-orb {
   position: absolute;
   border-radius: 50%;
@@ -508,29 +1314,46 @@ h2 em {
   pointer-events: none;
 }
 
+
 .orb-a {
   width: 470px;
   height: 470px;
   right: 6%;
   top: 17%;
-  background: radial-gradient(circle, rgba(99,0,13,.5), rgba(99,0,13,.04) 65%, transparent 72%);
+  background: radial-gradient(
+    circle,
+    rgba(99,0,13,.5),
+    rgba(99,0,13,.04) 65%,
+    transparent 72%
+  );
   animation: float 8s ease-in-out infinite;
 }
+
 
 .orb-b {
   width: 330px;
   height: 330px;
   right: 22%;
   top: 33%;
-  background: radial-gradient(circle, rgba(143,99,255,.12), transparent 68%);
+  background: radial-gradient(
+    circle,
+    rgba(143,99,255,.12),
+    transparent 68%
+  );
   animation: float 11s ease-in-out infinite reverse;
 }
+
 
 @keyframes float {
   50% {
     transform: translate(15px,-22px) scale(1.04);
   }
 }
+
+
+/* =========================================================
+   SCROLL CUE
+   ========================================================= */
 
 .scroll-cue {
   position: absolute;
@@ -545,11 +1368,13 @@ h2 em {
   letter-spacing: .1em;
 }
 
+
 .scroll-cue span {
   width: 32px;
   height: 1px;
   background: var(--line-strong);
 }
+
 
 .hero-index {
   position: absolute;
@@ -559,12 +1384,18 @@ h2 em {
   color: var(--faint);
 }
 
+
+/* =========================================================
+   MARQUEE
+   ========================================================= */
+
 .marquee {
   overflow: hidden;
   border-block: 1px solid var(--line);
   padding: 17px 0;
   background: var(--surface);
 }
+
 
 .marquee-track {
   width: max-content;
@@ -576,9 +1407,11 @@ h2 em {
   letter-spacing: .16em;
 }
 
+
 .marquee-track b {
   color: var(--burgundy-2);
 }
+
 
 @keyframes marquee {
   to {
@@ -586,15 +1419,19 @@ h2 em {
   }
 }
 
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
 .section-heading {
   display: grid;
   grid-template-columns: 70px 1fr;
   gap: 20px;
   margin-bottom: 70px;
-
-  /* FIX */
   min-width: 0;
 }
+
 
 .section-number {
   font: 10px DM Mono, monospace;
@@ -602,36 +1439,41 @@ h2 em {
   padding-top: 5px;
 }
 
+
 .section-heading h2 {
   margin: 0;
   font-size: clamp(43px, 6.2vw, 82px);
   line-height: .98;
   letter-spacing: -.06em;
-
-  /* FIX */
   min-width: 0;
   max-width: 100%;
   overflow-wrap: anywhere;
 }
 
+
 .section-heading h2 em {
   color: var(--purple-soft);
 }
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
 
 .about-grid {
   display: grid;
   grid-template-columns: 1.2fr .8fr;
   gap: 9vw;
   align-items: start;
-
-  /* FIX */
   min-width: 0;
 }
+
 
 .about-copy {
   max-width: 670px;
   min-width: 0;
 }
+
 
 .about-copy p {
   color: var(--muted);
@@ -640,6 +1482,7 @@ h2 em {
   overflow-wrap: anywhere;
 }
 
+
 .about-copy .lead {
   color: var(--text);
   font-size: 22px;
@@ -647,10 +1490,12 @@ h2 em {
   letter-spacing: -.02em;
 }
 
+
 .about-copy strong {
   color: var(--text);
   font-weight: 600;
 }
+
 
 .about-card {
   background: var(--surface);
@@ -658,11 +1503,10 @@ h2 em {
   padding: 10px;
   border-radius: 12px;
   box-shadow: var(--shadow);
-
-  /* FIX */
   min-width: 0;
   max-width: 100%;
 }
+
 
 .portrait-wrap {
   aspect-ratio: 4/5;
@@ -672,6 +1516,7 @@ h2 em {
   border-radius: 7px;
 }
 
+
 .portrait-wrap img {
   width: 100%;
   height: 100%;
@@ -680,25 +1525,33 @@ h2 em {
   opacity: .8;
 }
 
+
 .portrait-overlay {
   position: absolute;
   inset: 0;
   display: grid;
   place-content: center;
   text-align: center;
-  background: linear-gradient(180deg, transparent 45%, rgba(0,0,0,.55));
+  background: linear-gradient(
+    180deg,
+    transparent 45%,
+    rgba(0,0,0,.55)
+  );
 }
+
 
 .portrait-overlay span {
   font: 700 10px DM Mono, monospace;
   letter-spacing: .2em;
 }
 
+
 .portrait-overlay small {
   margin-top: 7px;
   color: #bbb;
   font: 9px DM Mono, monospace;
 }
+
 
 .about-card-footer {
   display: flex;
@@ -709,18 +1562,23 @@ h2 em {
   letter-spacing: .1em;
 }
 
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
 .skills-section {
   border-top: 1px solid var(--line);
 }
+
 
 .skills-layout {
   display: grid;
   grid-template-columns: .75fr 1.25fr;
   gap: 8vw;
-
-  /* FIX */
   min-width: 0;
 }
+
 
 .skill-intro {
   position: sticky;
@@ -728,6 +1586,7 @@ h2 em {
   height: fit-content;
   min-width: 0;
 }
+
 
 .big-number {
   font-size: 120px;
@@ -737,11 +1596,13 @@ h2 em {
   font-weight: 200;
 }
 
+
 .skill-intro > p:not(.big-number) {
   color: var(--muted);
   line-height: 1.8;
   max-width: 330px;
 }
+
 
 .terminal-mini {
   margin-top: 40px;
@@ -752,10 +1613,9 @@ h2 em {
   display: grid;
   grid-template-columns: repeat(3, 6px) 1fr;
   gap: 4px;
-
-  /* FIX */
   min-width: 0;
 }
+
 
 .terminal-dot {
   width: 6px;
@@ -763,6 +1623,7 @@ h2 em {
   border-radius: 50%;
   background: var(--faint);
 }
+
 
 .terminal-mini code {
   grid-column: 1/-1;
@@ -772,15 +1633,18 @@ h2 em {
   overflow-wrap: anywhere;
 }
 
+
 .terminal-mini b {
   color: var(--success);
   font-weight: 400;
 }
 
+
 .skill-groups {
   border-top: 1px solid var(--line);
   min-width: 0;
 }
+
 
 .skill-group {
   display: grid;
@@ -789,15 +1653,15 @@ h2 em {
   align-items: start;
   padding: 30px 0;
   border-bottom: 1px solid var(--line);
-
-  /* FIX */
   min-width: 0;
 }
+
 
 .skill-index {
   color: var(--burgundy-2);
   font: 10px DM Mono, monospace;
 }
+
 
 .skill-group h3 {
   margin: 0;
@@ -806,12 +1670,14 @@ h2 em {
   overflow-wrap: anywhere;
 }
 
+
 .chips {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
   min-width: 0;
 }
+
 
 .chips span,
 .project-tags span {
@@ -822,19 +1688,24 @@ h2 em {
   font: 9px DM Mono, monospace;
 }
 
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
 .projects-section {
   border-top: 1px solid var(--line);
 }
+
 
 .project-toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 22px;
-
-  /* FIX */
   min-width: 0;
 }
+
 
 .filters {
   display: flex;
@@ -842,6 +1713,7 @@ h2 em {
   flex-wrap: wrap;
   min-width: 0;
 }
+
 
 .filter {
   border: 1px solid var(--line);
@@ -856,6 +1728,7 @@ h2 em {
   transition: .2s;
 }
 
+
 .filter:hover,
 .filter.active {
   background: var(--text);
@@ -863,35 +1736,41 @@ h2 em {
   border-color: var(--text);
 }
 
+
 .project-count {
   color: var(--faint);
   font: 9px DM Mono, monospace;
   flex-shrink: 0;
 }
 
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-
-  /* FIX */
   min-width: 0;
 }
+
 
 .project-card {
   border: 1px solid var(--line);
   background: var(--surface);
   border-radius: 12px;
   overflow: hidden;
-  transition: transform .45s var(--ease), border .3s, opacity .3s;
+  transition:
+    transform .45s var(--ease),
+    border .3s,
+    opacity .3s;
   min-width: 0;
   max-width: 100%;
 }
+
 
 .project-card:hover {
   transform: translateY(-6px);
   border-color: var(--line-strong);
 }
+
 
 .project-card.featured {
   grid-column: 1/-1;
@@ -899,9 +1778,15 @@ h2 em {
   grid-template-columns: 1.15fr .85fr;
 }
 
+
 .project-card.hidden {
   display: none;
 }
+
+
+/* =========================================================
+   PROJECT VISUAL
+   ========================================================= */
 
 .project-visual {
   min-height: 350px;
@@ -913,18 +1798,34 @@ h2 em {
   min-width: 0;
 }
 
+
 .project-card:not(.featured) .project-visual {
   min-height: 300px;
 }
+
 
 .visual-grid {
   position: absolute;
   inset: 0;
   opacity: .35;
-  background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.05) 1px,
+      transparent 1px
+    );
   background-size: 35px 35px;
-  transform: perspective(600px) rotateX(55deg) scale(1.5) translateY(80px);
+  transform:
+    perspective(600px)
+    rotateX(55deg)
+    scale(1.5)
+    translateY(80px);
 }
+
 
 .project-label {
   position: absolute;
@@ -939,6 +1840,11 @@ h2 em {
   letter-spacing: .12em;
 }
 
+
+/* =========================================================
+   ASSISTANT UI
+   ========================================================= */
+
 .assistant-ui {
   width: 230px;
   padding: 30px;
@@ -952,16 +1858,24 @@ h2 em {
   max-width: 100%;
 }
 
+
 .assistant-orb {
   display: block;
   width: 62px;
   height: 62px;
   margin: 0 auto 20px;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #d9c9ff, #8f63ff 35%, #63000d 75%);
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #d9c9ff,
+      #8f63ff 35%,
+      #63000d 75%
+    );
   box-shadow: 0 0 55px rgba(143,99,255,.4);
   animation: breathe 3s ease-in-out infinite;
 }
+
 
 @keyframes breathe {
   50% {
@@ -969,17 +1883,20 @@ h2 em {
   }
 }
 
+
 .assistant-ui small {
   font: 8px DM Mono, monospace;
   color: var(--purple-soft);
   letter-spacing: .2em;
 }
 
+
 .assistant-ui strong {
   display: block;
   margin: 10px 0 17px;
   font-size: 15px;
 }
+
 
 .assistant-wave {
   height: 25px;
@@ -988,6 +1905,7 @@ h2 em {
   align-items: center;
   gap: 4px;
 }
+
 
 .assistant-wave i,
 .music-bars i {
@@ -999,11 +1917,13 @@ h2 em {
   animation: wave 1s ease-in-out infinite;
 }
 
+
 .assistant-wave i:nth-child(2),
 .music-bars i:nth-child(2) {
   animation-delay: .12s;
   height: 18px;
 }
+
 
 .assistant-wave i:nth-child(3),
 .music-bars i:nth-child(3) {
@@ -1011,11 +1931,13 @@ h2 em {
   height: 23px;
 }
 
+
 .assistant-wave i:nth-child(4),
 .music-bars i:nth-child(4) {
   animation-delay: .32s;
   height: 15px;
 }
+
 
 .assistant-wave i:nth-child(5),
 .music-bars i:nth-child(5) {
@@ -1023,11 +1945,17 @@ h2 em {
   height: 20px;
 }
 
+
 @keyframes wave {
   50% {
     transform: scaleY(.35);
   }
 }
+
+
+/* =========================================================
+   PROJECT INFO
+   ========================================================= */
 
 .project-info {
   padding: 27px;
@@ -1036,6 +1964,7 @@ h2 em {
   justify-content: center;
   min-width: 0;
 }
+
 
 .project-top {
   display: flex;
@@ -1046,12 +1975,14 @@ h2 em {
   min-width: 0;
 }
 
+
 .project-info h3 {
   font-size: 42px;
   margin: 25px 0 10px;
   letter-spacing: -.05em;
   overflow-wrap: anywhere;
 }
+
 
 .project-info p {
   color: var(--muted);
@@ -1061,12 +1992,14 @@ h2 em {
   overflow-wrap: anywhere;
 }
 
+
 .project-tags {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
   min-width: 0;
 }
+
 
 .project-links {
   margin-top: 25px;
@@ -1076,29 +2009,45 @@ h2 em {
   flex-wrap: wrap;
 }
 
+
 .project-links a {
   font: 10px DM Mono, monospace;
   text-transform: uppercase;
 }
+
 
 .project-links a span {
   color: var(--purple-soft);
   margin-left: 8px;
 }
 
+
 .project-links .coming {
   color: var(--faint);
   font: 8px DM Mono, monospace;
 }
+
 
 .disabled-link {
   opacity: .6;
   cursor: not-allowed;
 }
 
+
+/* =========================================================
+   ECHO VISUAL
+   ========================================================= */
+
 .echo-visual {
-  background: radial-gradient(circle at 50% 45%, rgba(143,99,255,.18), transparent 40%), #09080b;
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(143,99,255,.18),
+      transparent 40%
+    ),
+    #09080b;
 }
+
 
 .album {
   width: 145px;
@@ -1107,6 +2056,7 @@ h2 em {
   display: grid;
   place-items: center;
 }
+
 
 .album-core {
   width: 72px;
@@ -1120,6 +2070,7 @@ h2 em {
   z-index: 2;
 }
 
+
 .album-ring {
   position: absolute;
   border: 1px solid rgba(143,99,255,.28);
@@ -1127,19 +2078,23 @@ h2 em {
   animation: pulse 3s ease-out infinite;
 }
 
+
 .r1 {
   inset: 12px;
 }
+
 
 .r2 {
   inset: -8px;
   animation-delay: .8s;
 }
 
+
 .r3 {
   inset: -28px;
   animation-delay: 1.6s;
 }
+
 
 @keyframes pulse {
   50% {
@@ -1147,6 +2102,7 @@ h2 em {
     transform: scale(1.08);
   }
 }
+
 
 .music-bars {
   position: absolute;
@@ -1156,13 +2112,26 @@ h2 em {
   align-items: center;
 }
 
+
 .music-bars i {
   background: var(--burgundy-2);
 }
 
+
+/* =========================================================
+   DOCUMENTARY
+   ========================================================= */
+
 .documentary-visual {
-  background: radial-gradient(circle at 50% 40%, rgba(141,16,32,.45), transparent 40%), #0a0808;
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(141,16,32,.45),
+      transparent 40%
+    ),
+    #0a0808;
 }
+
 
 .film-frame {
   width: 62%;
@@ -1173,18 +2142,25 @@ h2 em {
   text-align: center;
   transform: rotate(-2deg);
   box-shadow: 0 25px 60px #000;
-  background: linear-gradient(145deg, rgba(255,255,255,.04), transparent);
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,.04),
+    transparent
+  );
 }
+
 
 .film-frame span {
   font: 18px "Playfair Display", serif;
   color: #d7c7c2;
 }
 
+
 .film-frame b {
   font: 46px "Playfair Display", serif;
   color: #f3e8e3;
 }
+
 
 .film-frame small {
   margin-top: 10px;
@@ -1193,15 +2169,22 @@ h2 em {
   letter-spacing: .16em;
 }
 
+
+/* =========================================================
+   JOURNEY
+   ========================================================= */
+
 .journey-section {
   border-top: 1px solid var(--line);
 }
+
 
 .timeline {
   max-width: 930px;
   margin-left: auto;
   border-top: 1px solid var(--line);
 }
+
 
 .timeline-item {
   display: grid;
@@ -1213,10 +2196,12 @@ h2 em {
   min-width: 0;
 }
 
+
 .timeline-year {
   color: var(--faint);
   font: 10px DM Mono, monospace;
 }
+
 
 .timeline-item h3 {
   margin: 0 0 8px;
@@ -1224,6 +2209,7 @@ h2 em {
   letter-spacing: -.03em;
   overflow-wrap: anywhere;
 }
+
 
 .timeline-item p {
   margin: 0;
@@ -1234,14 +2220,21 @@ h2 em {
   overflow-wrap: anywhere;
 }
 
+
 .timeline-item.active .timeline-year,
 .timeline-item.active h3 {
   color: var(--purple-soft);
 }
 
+
+/* =========================================================
+   MIND SECTION
+   ========================================================= */
+
 .mind-section {
   border-top: 1px solid var(--line);
 }
+
 
 .mind-grid {
   display: grid;
@@ -1249,6 +2242,7 @@ h2 em {
   gap: 16px;
   min-width: 0;
 }
+
 
 .reading-card,
 .quote-card,
@@ -1263,15 +2257,18 @@ h2 em {
   max-width: 100%;
 }
 
+
 .reading-card {
   min-height: 390px;
 }
+
 
 .card-kicker {
   color: var(--burgundy-2);
   font: 9px DM Mono, monospace;
   letter-spacing: .14em;
 }
+
 
 .reading-card h3 {
   font-size: 37px;
@@ -1280,6 +2277,7 @@ h2 em {
   margin: 65px 0 17px;
   overflow-wrap: anywhere;
 }
+
 
 .reading-card p,
 .statement-card p {
@@ -1290,6 +2288,11 @@ h2 em {
   overflow-wrap: anywhere;
 }
 
+
+/* =========================================================
+   BOOK STACK
+   ========================================================= */
+
 .book-stack {
   position: absolute;
   right: 35px;
@@ -1298,6 +2301,7 @@ h2 em {
   flex-direction: column;
   transform: rotate(-5deg);
 }
+
 
 .book-stack span {
   display: grid;
@@ -1309,20 +2313,28 @@ h2 em {
   font: 9px DM Mono, monospace;
 }
 
+
+/* =========================================================
+   QUOTE CARD
+   ========================================================= */
+
 .quote-card {
   min-height: 390px;
   display: flex;
   flex-direction: column;
 }
 
+
 .quote-display {
   margin: auto 0;
 }
+
 
 .quote-display > span {
   font: 65px/.5 "Playfair Display", serif;
   color: var(--purple);
 }
+
 
 .quote-display p {
   font: italic 25px/1.45 "Playfair Display", serif;
@@ -1330,6 +2342,11 @@ h2 em {
   margin: 15px 0;
   overflow-wrap: anywhere;
 }
+
+
+/* =========================================================
+   TEXT BUTTON
+   ========================================================= */
 
 .text-button {
   width: fit-content;
@@ -1343,6 +2360,11 @@ h2 em {
   letter-spacing: .1em;
 }
 
+
+/* =========================================================
+   STATEMENT CARD
+   ========================================================= */
+
 .statement-card {
   grid-column: 1/-1;
   display: flex;
@@ -1351,6 +2373,7 @@ h2 em {
   gap: 50px;
 }
 
+
 .statement-card p {
   font: 21px/1.65 "Playfair Display", serif;
   max-width: 760px;
@@ -1358,9 +2381,15 @@ h2 em {
   color: var(--text);
 }
 
+
+/* =========================================================
+   NOW SECTION
+   ========================================================= */
+
 .now-section {
   padding-top: 0;
 }
+
 
 .now-card {
   border: 1px solid var(--line);
@@ -1370,10 +2399,16 @@ h2 em {
   grid-template-columns: 55px 1fr auto;
   gap: 22px;
   align-items: center;
-  background: linear-gradient(100deg, rgba(99,0,13,.16), rgba(143,99,255,.06));
+  background:
+    linear-gradient(
+      100deg,
+      rgba(99,0,13,.16),
+      rgba(143,99,255,.06)
+    );
   min-width: 0;
   max-width: 100%;
 }
+
 
 .now-icon {
   width: 42px;
@@ -1384,6 +2419,7 @@ h2 em {
   place-items: center;
 }
 
+
 .now-icon span {
   width: 8px;
   height: 8px;
@@ -1392,15 +2428,18 @@ h2 em {
   box-shadow: 0 0 16px var(--success);
 }
 
+
 .now-card h2 {
   margin: 0;
   font-size: 23px;
   overflow-wrap: anywhere;
 }
 
+
 .now-card h2 em {
   color: var(--purple-soft);
 }
+
 
 .now-card > div > p:last-child {
   margin: 7px 0 0;
@@ -1409,12 +2448,14 @@ h2 em {
   overflow-wrap: anywhere;
 }
 
+
 .live-badge {
   color: var(--success);
   font: 9px DM Mono, monospace;
   letter-spacing: .12em;
   white-space: nowrap;
 }
+
 
 .live-badge i {
   display: inline-block;
@@ -1425,10 +2466,16 @@ h2 em {
   margin-right: 7px;
 }
 
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
 .contact-section {
   border-top: 1px solid var(--line);
   padding-bottom: 100px;
 }
+
 
 .contact-head h2 {
   margin: 0;
@@ -1439,9 +2486,11 @@ h2 em {
   overflow-wrap: anywhere;
 }
 
+
 .contact-head h2 em {
   color: var(--purple-soft);
 }
+
 
 .contact-grid {
   margin-top: 85px;
@@ -1452,9 +2501,11 @@ h2 em {
   min-width: 0;
 }
 
+
 .contact-copy {
   min-width: 0;
 }
+
 
 .contact-copy > p {
   color: var(--muted);
@@ -1463,6 +2514,7 @@ h2 em {
   max-width: 450px;
   overflow-wrap: anywhere;
 }
+
 
 .email-link {
   display: inline-flex;
@@ -1476,9 +2528,15 @@ h2 em {
   overflow-wrap: anywhere;
 }
 
+
 .email-link span {
   color: var(--purple-soft);
 }
+
+
+/* =========================================================
+   SOCIAL GRID
+   ========================================================= */
 
 .social-grid {
   display: grid;
@@ -1486,6 +2544,7 @@ h2 em {
   border-top: 1px solid var(--line);
   min-width: 0;
 }
+
 
 .social-grid a {
   display: flex;
@@ -1496,13 +2555,16 @@ h2 em {
   min-width: 0;
 }
 
+
 .social-grid a:nth-child(odd) {
   margin-right: 25px;
 }
 
+
 .social-grid a:nth-child(even) {
   margin-left: 25px;
 }
+
 
 .social-grid b {
   color: var(--faint);
@@ -1510,10 +2572,16 @@ h2 em {
   transition: .2s;
 }
 
+
 .social-grid a:hover b {
   color: var(--purple-soft);
   transform: translate(3px,-3px);
 }
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 .footer {
   width: 90vw;
@@ -1527,17 +2595,20 @@ h2 em {
   min-width: 0;
 }
 
+
 .footer-logo {
   font-weight: 800;
   letter-spacing: .08em;
   font-size: 13px;
 }
 
+
 .footer p {
   margin: 8px 0 0;
   color: var(--faint);
   font: 9px DM Mono, monospace;
 }
+
 
 .footer-right {
   display: flex;
@@ -1549,6 +2620,7 @@ h2 em {
   min-width: 0;
 }
 
+
 #topButton {
   border: 0;
   border-bottom: 1px solid var(--line-strong);
@@ -1558,6 +2630,11 @@ h2 em {
   font: inherit;
   color: var(--muted);
 }
+
+
+/* =========================================================
+   COMMAND PALETTE
+   ========================================================= */
 
 .command-overlay {
   position: fixed;
@@ -1573,10 +2650,12 @@ h2 em {
   transition: .25s;
 }
 
+
 .command-overlay.open {
   opacity: 1;
   visibility: visible;
 }
+
 
 .command-panel {
   width: min(580px, 90vw);
@@ -1589,9 +2668,11 @@ h2 em {
   transition: .3s var(--ease);
 }
 
+
 .command-overlay.open .command-panel {
   transform: none;
 }
+
 
 .command-search {
   display: flex;
@@ -1600,9 +2681,11 @@ h2 em {
   border-bottom: 1px solid var(--line);
 }
 
+
 .command-search span {
   color: var(--purple-soft);
 }
+
 
 .command-search input {
   width: 100%;
@@ -1613,6 +2696,7 @@ h2 em {
   font-size: 14px;
   min-width: 0;
 }
+
 
 .command-list button {
   width: 100%;
@@ -1628,9 +2712,11 @@ h2 em {
   min-width: 0;
 }
 
+
 .command-list button:hover {
   background: var(--surface);
 }
+
 
 .command-list kbd,
 .command-list i {
@@ -1638,9 +2724,11 @@ h2 em {
   font: 9px DM Mono, monospace;
 }
 
+
 .command-list i {
   text-align: right;
 }
+
 
 .command-foot {
   padding: 12px 20px;
@@ -1651,11 +2739,17 @@ h2 em {
   justify-content: space-between;
 }
 
+
 .command-foot span {
   border: 1px solid var(--line);
   padding: 3px 6px;
   border-radius: 4px;
 }
+
+
+/* =========================================================
+   TOAST
+   ========================================================= */
 
 .toast {
   position: fixed;
@@ -1675,26 +2769,41 @@ h2 em {
   max-width: 90vw;
 }
 
+
 .toast.show {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, 0);
 }
 
+
+/* =========================================================
+   REVEAL ANIMATION
+   ========================================================= */
+
 .reveal {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity .9s var(--ease), transform .9s var(--ease);
+  transition:
+    opacity .9s var(--ease),
+    transform .9s var(--ease);
 }
+
 
 .reveal.visible {
   opacity: 1;
   transform: none;
 }
 
+
 .reveal-delay {
   transition-delay: .12s;
 }
+
+
+/* =========================================================
+   CUSTOM CURSOR
+   ========================================================= */
 
 .cursor-dot,
 .cursor-ring {
@@ -1704,6 +2813,7 @@ h2 em {
   transform: translate(-50%,-50%);
 }
 
+
 .cursor-dot {
   width: 5px;
   height: 5px;
@@ -1711,13 +2821,19 @@ h2 em {
   background: var(--text);
 }
 
+
 .cursor-ring {
   width: 28px;
   height: 28px;
   border: 1px solid rgba(255,255,255,.4);
   border-radius: 50%;
-  transition: width .2s, height .2s, background .2s, border .2s;
+  transition:
+    width .2s,
+    height .2s,
+    background .2s,
+    border .2s;
 }
+
 
 .cursor-ring.hover {
   width: 45px;
@@ -1725,6 +2841,11 @@ h2 em {
   background: rgba(143,99,255,.08);
   border-color: var(--purple-soft);
 }
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
 
 @media (max-width: 900px) {
 
@@ -1789,6 +2910,11 @@ h2 em {
   }
 }
 
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 620px) {
 
   .site-header {
@@ -1822,6 +2948,7 @@ h2 em {
   }
 
   /* FIX: Mobile heading can never push page width */
+
   .hero h1 {
     font-size: clamp(48px, 14vw, 82px);
     width: 100%;
@@ -1965,6 +3092,7 @@ h2 em {
   }
 
   /* FINAL MOBILE OVERFLOW SAFETY FIX */
+
   .site-header,
   .mobile-menu,
   .section,
@@ -1979,6 +3107,11 @@ h2 em {
     max-width: 100%;
   }
 }
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -1996,6 +3129,8 @@ h2 em {
     transform: none;
   }
 }
+
+
 /* =========================================================
    MAHEEM PORTFOLIO
    FINAL HERO BACKGROUND / NAME CLIPPING FIX
@@ -2014,7 +3149,9 @@ body {
   overflow-x: clip;
 }
 
+
 @supports not (overflow: clip) {
+
   html,
   body {
     overflow-x: hidden;
@@ -2033,6 +3170,7 @@ body {
   /*
    * Do not clip the large background/orb artwork.
    */
+
   overflow: visible !important;
 
   width: min(var(--max), 90vw);
@@ -2064,6 +3202,7 @@ body {
   /*
    * Prevent the large name from being cut.
    */
+
   width: max-content;
   max-width: none;
 
@@ -2073,9 +3212,11 @@ body {
    * IMPORTANT:
    * Do not force individual letters/words to break.
    */
+
   word-break: normal;
   overflow-wrap: normal;
 }
+
 
 .hero h1 em {
   display: inline-block;
@@ -2096,8 +3237,10 @@ body {
   /*
    * The artwork is allowed to extend outside the hero.
    */
+
   overflow: visible;
 }
+
 
 .orb-a,
 .orb-b {
@@ -2145,7 +3288,6 @@ body {
     z-index: 0;
     right: -20%;
   }
-
 }
 
 
@@ -2183,6 +3325,7 @@ body {
    * Keep the decorative background visible
    * without allowing it to create horizontal scrolling.
    */
+
   .hero-orb {
     z-index: 0;
     pointer-events: none;
@@ -2199,7 +3342,6 @@ body {
     height: 290px;
     right: -15%;
   }
-
 }
 
 
@@ -2221,5 +3363,4 @@ body {
   .orb-b {
     right: -25%;
   }
-
-  }
+}
