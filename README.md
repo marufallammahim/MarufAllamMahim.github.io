@@ -1,413 +1,251 @@
-# MAHEEM — Personal Portfolio
+<div align="center">MARUF ALLAM MAHIM
 
-<div align="center">
+"MAHEEM"
 
-# MARUF ALLAM MAHIM
+Developer • Writer • Problem Solver
 
-### MAHEEM.
+Building useful things, exploring ideas, and turning curiosity into code.
 
-**Developer • Novelist • Writer • Observer • Problem Solver**
+<br/><a href="https://marufallammahim.github.io">
+  <img src="https://img.shields.io/badge/🌐%20Portfolio-marufallammahim.github.io-7f1d3d?style=for-the-badge" alt="Portfolio"/>
+</a>
+<a href="https://github.com/marufallammahim">
+  <img src="https://img.shields.io/badge/GitHub-marufallammahim-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+<a href="https://linkedin.com/in/marufallammahim">
+  <img src="https://img.shields.io/badge/LinkedIn-marufallammahim-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a></div>---
 
-*A personal portfolio built around curiosity, creativity, technology, and the ideas behind the person.*
+👋 About Me
 
-</div>
+I'm Maruf Allam Mahim, known as MAHEEM — a Computer Science student and aspiring software developer from Bangladesh.
 
----
+I enjoy building software, exploring technologies, solving practical problems, and turning ideas into useful projects.
 
-## ✦ About This Portfolio
+Beyond programming, I have an interest in writing, books, storytelling, and observation. I believe technology is not only about writing code — it's also about understanding problems and finding better ways to solve them.
 
-**MAHEEM** is the personal portfolio website of **MARUF ALLAM MAHIM**, a Computer Science student and aspiring software developer from Panchagarh, Bangladesh.
-
-The website is designed to be more than a conventional developer portfolio. Instead of presenting only skills and projects, it combines **technology, personal identity, reading, writing, creativity, experimentation, and philosophy** into one interactive digital space.
-
-The core idea is simple:
-
-> **A portfolio should not only show what someone can build — it should also show how they think.**
-
-The website therefore treats the portfolio as a digital representation of MAHIM's personality, interests, learning journey, creative work, and approach to problem solving.
-
----
-
-## 🧠 The Idea Behind The Website
-
-The concept comes from two sides of MAHIM:
-
-**The Builder** — someone who enjoys coding, exploring technology, creating tools, experimenting with Android applications, and finding ways to make everyday things simpler.
-
-**The Observer** — someone who enjoys books, novels, writing, stories, small details, and quietly observing the world around him.
-
-The website brings these two sides together.
-
-The visual language uses a **dark, cinematic, burgundy and technology-inspired aesthetic** to create an atmosphere that feels personal rather than corporate.
-
-Instead of simply saying:
-
-> “Here are my skills.”
-
-the website attempts to communicate:
-
-> **“This is how I explore, think, create, and build.”**
+«I build things that make life simpler — and explore ideas that make life more interesting.»
 
 ---
 
-# 👤 Creator
+🧠 What I Do
 
-## MARUF ALLAM MAHIM
-
-**Professional name:** MAHEEM  
-**Username:** `@marufallammahim`  
-**Location:** Panchagarh, Bangladesh  
-**Education:** Diploma in Engineering — Computer Science  
-**Institution:** Thakurgaon Polytechnic Institute  
-**Current stage:** Fifth semester
-
-### Identity
-
-MAHEEM describes himself as:
-
-**Developer • Novelist • Writer • Observer • Problem Solver**
-
-He is particularly interested in programming, Android development, APIs, technology, experimentation, books, writing, and building useful tools.
-
-His motivation for technology comes largely from the desire to make things **simpler, easier, and more useful**.
-
-When an idea becomes stuck in his mind, he tends to keep exploring it until he understands it, solves it, or turns it into something tangible.
+- 💻 Build software and experimental projects
+- 📱 Explore Android application development
+- 🔌 Work with APIs and API-driven applications
+- 🧩 Solve practical problems through code
+- 🧪 Experiment with new technologies
+- ✍️ Write and explore storytelling
+- 📚 Learn continuously through projects and experimentation
 
 ---
 
-# ⚡ Core Philosophy
+⚙️ Tech Stack
 
-The portfolio is built around a simple personal philosophy:
+Languages
 
-> **“I build things that make life simpler — and explore ideas that make life more interesting.”**
+<p>
+  <img src="https://skillicons.dev/icons?i=python,java,kotlin,js" alt="Programming Languages"/>
+</p>Development & Frameworks
 
-Another personal thought represented throughout the website is:
+<p>
+  <img src="https://skillicons.dev/icons?i=androidstudio,django,flask" alt="Development Tools"/>
+</p>Tools & Environment
 
-> **“Hard work is difficult to begin, but its taste is worth everything.”**
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,docker,vscode,pycharm,linux" alt="Tools"/>
+</p>---
 
-These ideas represent the creative and technical mindset behind MAHEEM.
+🚀 Featured Projects
 
-The website intentionally gives space to both **technical projects and personal thoughts**, because creativity is not limited to programming.
+🤖 Meemo
 
----
+An experimental Android digital assistant.
 
-# 🎨 Design & Visual Identity
+Meemo is one of my main projects, focused on exploring how a personal digital assistant can make everyday interactions simpler and more useful.
 
-The website follows a carefully defined visual direction:
-
-- Dark-first interface
-- Burgundy-inspired accent palette
-- Cyber/tech atmosphere
-- Cinematic visual language
-- Minimal but expressive typography
-- Glass-inspired interface elements
-- Subtle gradients and glowing elements
-- Interactive background effects
-- Editorial-style section layouts
-- Strong typography hierarchy
-- Smooth transitions and motion
-- Responsive mobile-first structure
-
-The visual style combines the atmosphere of a **developer workspace**, a **digital laboratory**, and a **personal journal**.
-
----
-
-# 🚀 Main Features
-
-## Animated Hero Section
-
-The homepage opens with a large personal introduction featuring:
-
-- MARUF ALLAM MAHIM
-- MAHEEM branding
-- Professional identity
-- Current learning status
-- Animated visual atmosphere
-- Primary portfolio navigation
-- Personal statement
-
-The hero section immediately establishes the personality of the portfolio.
-
----
-
-## 🌓 Dark & Light Mode
-
-The website supports both:
-
-- Dark Mode
-- Light Mode
-
-The theme can be switched interactively from the navigation area.
-
-The dark theme is the primary visual identity, while the light theme provides a cleaner alternative for users who prefer brighter interfaces.
-
----
-
-## ⌨️ Command Palette
-
-The portfolio includes an interactive command palette designed for fast navigation.
-
-It provides direct access to:
-
-- About
-- Projects
-- Skills
-- From My Mind
-- Contact
-- Theme switching
-
-The command interface gives the website a terminal-inspired developer experience while keeping navigation simple.
-
----
-
-## 🖱️ Custom Cursor
-
-On compatible desktop devices, the website provides a custom cursor experience with:
-
-- Cursor dot
-- Cursor ring
-- Interactive hover behavior
-- Magnetic interactions
-
-This creates a more tactile and dynamic browsing experience.
-
----
-
-## ✨ Smooth Scrolling & Scroll Animations
-
-Sections appear progressively as the visitor moves through the page.
-
-The experience includes:
-
-- Reveal animations
-- Delayed section animations
-- Smooth navigation
-- Interactive transitions
-- Progressive visual storytelling
-
-The animation system is intentionally subtle so that motion enhances the content rather than distracting from it.
-
----
-
-# 💻 Technical Identity
-
-The portfolio presents MAHEEM's technical interests and development ecosystem.
-
-### Programming Languages
-
-- Python
-- Java
-- Kotlin
-- JavaScript
-
-### Development
+Exploring:
 
 - Android Development
-- Android Studio
-- API-based application development
-
-### Frameworks & Backend
-
-- Django
-- Flask
-
-### Tools & Systems
-
-- Git
-- GitHub
-- Docker
-- VS Code
-- PyCharm
-- Arch Linux
-
-### Areas of Exploration
-
-- Android APIs
-- Robotics
-- Operating Systems
-- Software development
-- Experimental projects
-
----
-
-# 🚧 Featured Projects
-
-## 🤖 Meemo
-
-**Meemo** is the featured project of the portfolio.
-
-It is an **Android Digital Assistant** concept focused on making everyday digital interactions easier, more personal, and more useful.
-
-The project represents MAHEEM's interest in:
-
-- Android development
-- Digital assistants
 - APIs
 - Automation
-- Human-computer interaction
-- Building useful personal tools
-
-Meemo is presented as an evolving project rather than a finished product, reflecting the experimental nature of MAHEEM's development journey.
+- Human-Computer Interaction
+- Personal Productivity
 
 ---
 
-## 🎵 Echo-Music
+🎵 Echo-Music
 
-**Echo-Music** is a music application currently being explored and developed.
+An Android music application project.
 
-The project is used as a practical environment for experimenting with:
+Echo-Music is a practical project through which I explore Android development, application architecture, interfaces, APIs, and digital music experiences.
 
-- Android application development
-- User interfaces
-- Music experiences
+Exploring:
+
+- Android Development
+- UI/UX
 - APIs
-- Application architecture
-- New development ideas
-
-It represents the current stage of MAHEEM's Android development journey.
+- Application Architecture
+- Music Experiences
 
 ---
 
-## 🎬 আষাঢ়ে ফানুস
+🎬 আষাঢ়ে ফানুস
 
-**আষাঢ়ে ফানুস** is a documentary-style creative project.
+A creative storytelling project.
 
-Unlike the technical projects, this work explores storytelling and imagination.
+A project focused on storytelling, imagination, observation, and creative expression — representing the side of my work that exists beyond programming.
 
-The project is shaped with a feeling similar to a **story or novel**, demonstrating another side of MAHEEM's creativity beyond programming.
+Exploring:
 
-It represents the connection between:
-
-**Storytelling → Observation → Imagination → Creation**
-
----
-
-# 📚 Books & Literary Side
-
-Programming is only one part of MAHEEM's interests.
-
-Books and storytelling have an important place in his creative identity.
-
-His first novel was:
-
-### **দত্তা — শরৎচন্দ্র চট্টোপাধ্যায়**
-
-He has also read extensively from the works of **Sarat Chandra Chattopadhyay** and explored the **Feluda** collection.
-
-This literary influence is reflected in the portfolio through dedicated storytelling elements, quotes, and a section called:
-
-### **From My Mind**
-
-The purpose is to show that technical creativity and literary creativity can exist together.
+- Storytelling
+- Creative Writing
+- Visual Narrative
+- Imagination
+- Observation
 
 ---
 
-# 🧩 From My Mind
+🛠️ Currently Exploring
 
-The **From My Mind** section represents the more personal side of the portfolio.
+I'm continuously learning and improving my development skills.
 
-It contains:
+📱 Android Development
 
-- Personal thoughts
-- Quotes
-- Reading interests
-- Creative statements
-- Personal approach to problem solving
+Going deeper into Android application development and its ecosystem.
 
-The section is intentionally different from a traditional technical portfolio.
+☕ Java
 
-It communicates the idea that:
+Strengthening my Java fundamentals and development skills.
 
-> **Code is one language. Stories are another.**
+🟣 Kotlin
 
----
+Exploring Kotlin as part of my Android development journey.
 
-# 🔭 Current Exploration
+🔌 APIs
 
-The website reflects MAHEEM's current learning journey rather than presenting learning as something finished.
+Learning how to integrate APIs into useful applications and experiences.
 
-Currently, the focus includes:
+🎵 Echo-Music
 
-### Java
-
-Continuing and completing Java.
-
-### Kotlin
-
-Beginning Kotlin as the next step toward deeper Android development.
-
-### Android Development
-
-Exploring Android application development more deeply.
-
-### APIs
-
-Experimenting with APIs and API-driven application experiences.
-
-### Echo-Music
-
-Developing and experimenting with the Echo-Music project.
+Continuing development and experimentation with Echo-Music.
 
 ---
 
-# 🛤️ Learning Journey
+🧭 My Journey
 
-The portfolio includes a visual journey showing the progression from curiosity to development.
+My development journey can be summarized as:
 
-The journey represents:
+Curiosity
+    ↓
+Computer Science
+    ↓
+Programming
+    ↓
+Problem Solving
+    ↓
+Android Development
+    ↓
+Experimentation
+    ↓
+Creation
 
-**Curiosity → Computer Science → Programming → Android → Experimentation → Creation**
-
-It is not presented as a conventional résumé timeline.
-
-Instead, it represents the evolution of MAHEEM's interests and the direction in which he is currently moving.
-
----
-
-# ❤️ Personal Inspiration
-
-One of the most personal elements of the portfolio appears in the hero section:
-
-> **“My father is my real hero.”**
-
-This statement represents a personal source of inspiration and gives the otherwise technical portfolio a human dimension.
-
-The website therefore intentionally avoids being completely mechanical or corporate.
-
-It is meant to feel like a person exists behind the code.
+I'm still learning, experimenting, and building.
 
 ---
 
-# 📱 Responsive Experience
+✍️ Beyond Code
 
-The website is designed to work across different screen sizes, including:
+Programming is only one part of what interests me.
 
-- Desktop
-- Laptop
-- Tablet
-- Mobile devices
+I enjoy:
 
-The layout adapts navigation, typography, cards, grids, animations, and content presentation according to the available screen space.
+- 📚 Reading books and novels
+- ✍️ Writing
+- 🧠 Observing and thinking
+- 🎭 Storytelling
+- 💡 Exploring ideas
+- 🔍 Understanding how things work
+
+I believe creativity and technology complement each other.
+
+«Code is one language. Stories are another.»
 
 ---
 
-# 🧭 Portfolio Structure
+🎯 My Approach
 
-The website is organized into several major experiences:
+I don't want to build software simply for the sake of building software.
 
-```text
-HOME
-  ↓
-ABOUT
-  ↓
-SKILLS
-  ↓
-PROJECTS
-  ↓
-JOURNEY
-  ↓
-FROM MY MIND
-  ↓
-CURRENTLY EXPLORING
-  ↓
-CONTACT
+I prefer projects that have a purpose — something that solves a problem, simplifies an experience, teaches me something new, or gives an idea a place to exist.
+
+My approach:
+
+Understand → Explore → Build → Experiment → Improve
+
+---
+
+🌐 My Portfolio
+
+My portfolio is designed as more than a traditional developer résumé.
+
+It brings together:
+
+- 👤 Personal identity
+- 💻 Technical skills
+- 🚀 Projects
+- 🧭 Learning journey
+- ✍️ Creative work
+- 🧠 Personal ideas
+
+The goal is to show not only what I build, but also how I think and explore.
+
+🔗 Visit My Portfolio
+
+<p align="center">
+  <a href="https://marufallammahim.github.io">
+    <img src="https://img.shields.io/badge/🌐%20Visit%20My%20Portfolio-7f1d3d?style=for-the-badge" alt="Visit Portfolio"/>
+  </a>
+</p>---
+
+📌 Portfolio Features
+
+- 🌙 Dark / Light Mode
+- ⌨️ Command Palette
+- 🖱️ Custom Cursor
+- ✨ Smooth Animations
+- 🎨 Cinematic Visual Design
+- 📱 Responsive Layout
+- 🚀 Interactive Project Showcase
+- 🧠 Personal & Creative Sections
+- ⚡ Modern Interface
+
+---
+
+💭 Philosophy
+
+«"Hard work is difficult to begin, but its taste is worth everything."»
+
+I believe progress comes from consistently learning, experimenting, failing, improving, and trying again.
+
+There is always something new to understand.
+
+---
+
+🔗 Connect With Me
+
+<p align="center"><a href="https://marufallammahim.github.io">
+<img src="https://img.shields.io/badge/Website-marufallammahim.github.io-7f1d3d?style=for-the-badge&logo=google-chrome&logoColor=white"/>
+</a><a href="https://github.com/marufallammahim">
+<img src="https://img.shields.io/badge/GitHub-marufallammahim-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a><a href="https://linkedin.com/in/marufallammahim">
+<img src="https://img.shields.io/badge/LinkedIn-marufallammahim-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a></p>---
+
+<div align="center">✦ MAHEEM
+
+Build. Explore. Learn. Create.
+
+<br/>Made with curiosity & code. ❤️
+
+</div>
