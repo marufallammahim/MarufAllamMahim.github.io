@@ -56,15 +56,15 @@
   $$("#mobileMenu a").forEach(a => a.addEventListener("click", closeMenu));
 
   // Reveal on scroll
-  const revealObserver = new IntersectionObserver(entries => {
+  const revealObserver = "IntersectionObserver" in window ? new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: .12 });
-  $$(".reveal").forEach(el => revealObserver.observe(el));
+  }, { threshold: .12 }) : null;
+  if (revealObserver) $(".reveal").forEach(el => revealObserver.observe(el));
 
   // Project filters
   const filters = $$(".filter");
@@ -126,7 +126,7 @@
   document.addEventListener("keydown", e => {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
       e.preventDefault();
-      overlay.classList.contains("open") ? closeCommands() : openCommands();
+      if (overlay) overlay.classList.contains("open") ? closeCommands() : openCommands();
     }
     if (e.key === "Escape") {
       closeCommands();
@@ -152,7 +152,8 @@
   $("#topButton")?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
   // Current year
-  $("#year").textContent = new Date().getFullYear();
+  const yearEl = $("#year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   // Toast
   let toastTimer;
